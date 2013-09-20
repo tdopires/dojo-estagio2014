@@ -9,11 +9,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		BlackJack blackJack = new BlackJack();
-		
+
 		exibirBoasVindas();
 		exibirMenu(blackJack);
 	}
-
 
 	private static void exibirMenu(BlackJack blackJack) {
 		while (true) {
@@ -34,10 +33,9 @@ public class Main {
 			}
 		}
 	}
-	
 
-	  private static void exibirBoasVindas() {
-	  
+	private static void exibirBoasVindas() {
+
 		System.out.println("  _________   _________   _________   __________  ");
 		System.out.println(" /         \\ /         \\ /         \\ /          \\");
 		System.out.println(" |A        | |A        | |A        | |A         |");
@@ -49,20 +47,17 @@ public class Main {
 		System.out.println(" |        A| |        A| |        A| |         A|");
 		System.out.println(" \\_________/ \\_________/ \\_________/ \\__________/");
 		System.out.println("=================================================");
-		System.out.println("BLACK JACK - DEXTRA - ESTÁGIO 2014");
+		System.out.println("        BLACK JACK - DEXTRA - ESTÁGIO 2014       ");
 		System.out.println("=================================================");
 		System.out.println();
-	    System.out.println("Opções (c) sacar carta; (p) parar;");
-	    System.out.println();
-	  }
-
+		System.out.println("Opções (c) sacar carta; (p) parar;");
+		System.out.println();
+	}
 
 	private static char leOpcaoJogada() {
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(
-					System.in));
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String linha = br.readLine();
-
 			return linha.length() > 0 ? linha.charAt(0) : '\0';
 		} catch (IOException e) {
 			e.printStackTrace();
